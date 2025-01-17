@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <style>
+        .positive-result {
+            color: green;
+            font-weight: bold;
+        }
+        .negative-result {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <h1>Prediction Result</h1>
+        <!-- Display the result with appropriate styling -->
+        <p class="fs-4 {{ result_class }}">{{ prediction_text }}</p>
+        <a href="/" class="btn btn-primary">Try Again</a>
+    </div>
+</body>
+</html>
